@@ -1,5 +1,6 @@
 def nieparz_skrot(n):
     m_list = []
+    n = n.strip()
     for char in str(n):
         if int(char) % 2 == 1:
             m_list.append(char)
