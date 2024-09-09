@@ -4,6 +4,9 @@ def nieparz_skrot(n):
         if int(char) % 2 == 1:
             m_list.append(char)
 
-    m = int(''.join(m_list))
-    print(f'Nieparzysty skrót liczby {n} to {m}')
-
+    m = ''.join(m_list)
+    if m == '':
+        return None  # liczba n nie ma nieparzystego skrótu
+    else:
+        m = int(m)
+    return m

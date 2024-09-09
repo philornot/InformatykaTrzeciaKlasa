@@ -1,5 +1,6 @@
 from interfejs import nieparz_skrot
 
 n = input("Wpisz liczbę n do skrócenia: ")
-nieparz_skrot(n)
+m = nieparz_skrot(n)
 
+print(f'Nieparzysty skrót liczby {n} to {m}')
