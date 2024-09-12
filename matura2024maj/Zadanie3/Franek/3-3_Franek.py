@@ -9,7 +9,7 @@ def nieparzysty_skrot(n):
     else:
         return "Taki skrót nie istnieje"
 
-LSk = list(open("skrot2.txt", "r"))
+LSk = list(open("../../../skrot2.txt", "r"))
 for i in range(len(LSk)):
     LSk[i] = int(LSk[i].strip())
 
