@@ -5,8 +5,9 @@ def nieparzysty_skrot():
         if int(n[i]) % 2 != 0:
             m += n[i]
     if len(m) > 0:
-        return(int(m))
+        return (int(m))
     else:
-        return("Taki skrót nie istnieje")
+        return ("Taki skrót nie istnieje")
+
 
 print(nieparzysty_skrot())
