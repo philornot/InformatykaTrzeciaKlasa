@@ -18,6 +18,6 @@ def sprawdz_liczbe_skrotow(file):
     return brak_skrotu, istnieje_skrot
 
 
-plik = 'matura2024maj/dane2024maj/skrot.txt'
+plik = '../../../skrot.txt'
 brak, istnieje = sprawdz_liczbe_skrotow(plik)
 print(f'Dla pliku {plik} jest {istnieje} istniejących skrótów oraz {brak} nieistniejących skrótów.')
