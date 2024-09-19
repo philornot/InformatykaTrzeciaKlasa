@@ -11,3 +11,12 @@ def nieparz_skrot(n):
     else:
         m = int(m)
     return m
+
+
+def nieparz_skrot_plik(plik):
+    with open(plik, encoding="utf-8") as f:
+        lines = f.readlines()
+    np = {}
+    for i in lines:
+        np[int(i.strip())] = nieparz_skrot(i)
+    return np
