@@ -18,7 +18,7 @@ for i in range(len(LSk)):
 wyn = []
 
 for i in range(len(LSk)):
-    a = LSk[i]
+    a = int(LSk[i])
     b = nieparzysty_skrot(LSk[i])
 
     # Check if b is not None before performing modulo operations
