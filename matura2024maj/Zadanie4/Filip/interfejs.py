@@ -1,4 +1,10 @@
-def czytaj_liczby_z_pliku(plik="../../../matura2024maj/dane2024maj/liczby.txt"):
+def czytaj_liczby_z_pliku(czy_przyklad=False):
+    # Sprawdzamy, mamy korzystać z pliku przykładowego (argument czy_przyklad)
+    if czy_przyklad is True:
+        plik = "../../../matura2024maj/dane2024maj/liczby_przyklad.txt"
+    else:
+        plik = "../../../matura2024maj/dane2024maj/liczby.txt"
+
     # Otwieramy plik do odczytu, wiersze to linie z pliku
     with open(plik, encoding="utf-8") as f:
         wiersze = f.readlines()

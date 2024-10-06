@@ -1,7 +1,7 @@
 from interfejs import czytaj_liczby_z_pliku
 
 # Pobieramy liczby z pliku (dwie listy: liczby pierwsze i liczby całkowite)
-liczby_pierwsze, liczby_calkowite = czytaj_liczby_z_pliku()
+liczby_pierwsze, liczby_calkowite = czytaj_liczby_z_pliku(czy_przyklad=False)
 
 # Zmienna do przechowywania ilości liczb pierwszych, które są dzielnikami jakiejś liczby z drugiego wiersza
 ile_liczb_z_dzielnikiem = 0
