@@ -9,7 +9,7 @@ def nieparzysty_skrot(n):
     else:
         return None
 
-LSk = list(open("../../dane2024maj/skrot.txt", "r"))
+LSk = list(open("../../../matura2024maj/dane2024maj/skrot.txt", "r"))
 for i in range(len(LSk)):
     LSk[i] = int(LSk[i].strip())
 
