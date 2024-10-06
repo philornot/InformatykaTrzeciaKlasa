@@ -1,6 +1,6 @@
 from interfejs import czytaj_liczby_z_pliku, rozklad_na_czynniki
 
-# Pobieramy liczby z pliku, z opcją na wybór pliku przykładowego (tu ustawiamy na False, żeby korzystać z pełnego pliku)
+# Pobieramy liczby z pliku
 liczby_pierwsze, liczby_calkowite = czytaj_liczby_z_pliku(czy_przyklad=False)
 
 # Wyświetlamy odpowiedź dla zadania 4.3
