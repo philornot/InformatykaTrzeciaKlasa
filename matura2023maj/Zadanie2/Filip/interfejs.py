@@ -11,6 +11,7 @@ def decimal_to_binary(liczba_10):
 
     return binary
 
+
 def licz_bloki(binary):
     ostatni_znak = ''
     licznik_blokow = 0
