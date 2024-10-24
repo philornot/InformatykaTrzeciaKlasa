@@ -1,13 +1,6 @@
-from interfejs import licz_bloki
+from interfejs import licz_bloki, czytaj_plik
 
-bin_txt = '../../dane2023maj/bin_przyklad.txt'
-
-linijki_clean = []
-with open(bin_txt) as plik:
-    linijki = plik.readlines()
-    for linijka in linijki:
-        linijka = linijka.strip()
-        linijki_clean.append(linijka)
+linijki_clean = czytaj_plik(czy_przyklad=False)
 
 licznik = 0
 for binary in linijki_clean:
@@ -15,4 +8,4 @@ for binary in linijki_clean:
     if licz_bloki(binary) <= 2:
         licznik += 1
 
-print(f'Dla pliku {bin_txt} odpowiedzią jest {licznik}')
+print(f'Odpowiedź: {licznik}')
