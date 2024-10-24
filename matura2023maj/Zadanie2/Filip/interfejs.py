@@ -10,3 +10,15 @@ def decimal_to_binary(liczba_10):
         num = num // 2
 
     return binary
+
+
+def licz_bloki(binary):
+    ostatni_znak = ''
+    licznik_blokow = 0
+
+    for char in binary:
+        if char != ostatni_znak:
+            licznik_blokow += 1
+            ostatni_znak = char
+
+    return licznik_blokow
