@@ -1,5 +1,6 @@
-def algorytm(s):
-    n = len(s)
+def algorytm(s, n=None):
+    if not n:
+        n = len(s)
 
     A = [0] * (n + 1)
 
@@ -26,6 +27,6 @@ def algorytm(s):
     return k
 
 
-def wynik_algorytmu(s):
-    k = algorytm(s)
+def wynik_algorytmu(s, n=None):
+    k = algorytm(s, n)
     print(f'{s} --> {k}')
