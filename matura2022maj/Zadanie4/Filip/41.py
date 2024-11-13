@@ -1,7 +1,8 @@
-from interfejs import czytaj_plik, przyklad_txt
+# noinspection PyUnresolvedReferences
+from interfejs import czytaj_plik, przyklad_txt, liczby_txt
 
 # liczby = czytaj_plik(plik=przyklad_txt)
-liczby = czytaj_plik()
+liczby = czytaj_plik(plik=liczby_txt)
 licznik = 0
 pierwsza = None
 
