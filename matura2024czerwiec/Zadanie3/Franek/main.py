@@ -6,3 +6,10 @@ def lista():
 
 def ROT13(s):
     S = ""
+    for i in range(len(s)):
+        if ord(s[i]) < 110 and ord(s[i]) >= 97:
+            S += chr(ord(s[i])+13)
+        else:
+            S += chr(ord(s[i]) - 13)
+    return S
+
