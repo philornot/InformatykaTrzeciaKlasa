@@ -1,4 +1,4 @@
-from matura2024czerwiec.Zadanie1.Filip.interfejs import zamien_na_bin
+from interfejs import zamien_na_bin
 
 
 def rysuj_tablice(tablica):
