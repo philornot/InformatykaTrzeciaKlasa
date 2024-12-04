@@ -21,8 +21,9 @@ def nwd_euklides(a, b):
     # Gdy b == 0, wartość a zawiera NWD
     return a
 
+
 # Przykład użycia:
-# print(nwd_modulo(48, 18))  # Wynik: 6
+# print(nwd_euklides(48, 18))  # Wynik: 6
 
 # Kolejne kroki dla przykładu (48, 18):
 # Start:   a = 48, b = 18
@@ -37,3 +38,5 @@ def nwd(a, b):
         b = a % b
         a = temp
     return a
+
+# poćwicz ten algorytm, próbując go napisać samemu niżej :)
