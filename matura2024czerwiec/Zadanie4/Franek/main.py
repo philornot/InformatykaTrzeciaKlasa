@@ -1,13 +1,18 @@
 def przesyl_pakietow(l):
     tabwyn = [l]
-    for i in range(len(l)):
+    ltc = l
+    for i in range(len(l)-1):
         lzm = [""] * len(l)
         for j in range(len(l)):
-            lzm[j] = l[l[j]-1]
+            lzm[j] = ltc[l[j]-1]
             print(l[l[j]-1], l[j])
-        tabwyn.append(lzm)
-        l = lzm
+        ltc = lzm
+        tabwyn.append(ltc)
         print(lzm)
     return tabwyn
 
-print(przesyl_pakietow([4, 3, 5, 3, 1, 2]))
+def lista():
+    l = list(open("../../dane2024czerwiec/odbiorcy.txt","r"))
+    for i in range(len(l)):
+        l[i] = int(l[i].strip())
+    return l
