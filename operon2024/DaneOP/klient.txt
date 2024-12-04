@@ -1,0 +1,75 @@
+ID_klienta	imie	nazwisko	miasto	ulica	dom	mieszkanie
+A0123	Kamil	Kowalewski	Bydgoszcz	Focha	4	10
+A1234	Anna	Kowalska	Wroc³aw	Œwidnicka	12b	3
+A1235	Marcin	Sikora	Radom	25 Czerwca	9b	12
+A1244	Jan	Kowalski	Warszawa	Marsza³kowska	10b	5
+A2345	Micha³	Jab³oñski	Warszawa	Wolska	15a	2
+A2347	Andrzej	Malinowski	Poznañ	G³ogowska	9a	5
+A3456	Katarzyna	Kaczmarek	£ódŸ	Piotrkowska	102	20
+A3459	Marek	WoŸniak	Szczecin	Wyzwolenia	5	1
+A4563	Rafa³	Duda	Rzeszów	Mickiewicza	8	3
+A4567	Marta	Kwiatkowska	Katowice	Mariacka	3c	33
+A4569	Damian	Kaczorowski	Czêstochowa	Mickiewicza	18	3
+A5678	Dorota	Szymañska	Bydgoszcz	Gdañska	5	11
+A6711	Grzegorz	Wawrzyniak	Zielona Góra	S³owiañska	24	11
+A6789	Beata	Paw³owska	Radom	¯eromskiego	8b	13
+A7890	£ukasz	Krawczyk	Tarnów	Krakowska	21	9
+A7892	Igor	Nowicki	Warszawa	Aleje Jerozolimskie	19a	3
+A8901	Robert	Krupa	Radom	Warszawska	25	10
+A8904	Szymon	Baran	£ódŸ	Piotrkowska	101	21
+A9012	£ukasz	Wojciechowski	Katowice	Koœciuszki	4c	32
+B0123	Damian	Kowalczyk	Sosnowiec	Modrzejowska	21	24
+B0124	Marta	Pawlak	Olsztyn	Pi³sudskiego	11	7
+B2345	Iwona	Kowalczyk	Koszalin	Mickiewicza	10	3
+B2349	Agata	Kowalska	Radom	Pi³sudskiego	9	2
+B2360	Martyna	Wiœniewska	Kraków	Basztowa	5	15
+B3456	Dorota	Nowakowska	S³upsk	Mickiewicza	7	2
+B3470	Weronika	Laskowska	Wroc³aw	Ruska	17	13
+B4567	El¿bieta	Górka	Siedlce	Mickiewicza	12	5
+B4569	Karolina	Jankowska	Lublin	Narutowicza	6a	18
+B5628	Justyna	Piotrowska	Toruñ	Szeroka	1	21
+B5638	Anna	Nowak	Kraków	Floriañska	3a	12
+B5678	Jan	Nowak	Kraków	Floriañska	5c	2
+B6719	Ewa	Majewska	Kraków	Grodzka	47	7
+B6729	Klaudia	Owczarek	Sosnowiec	Moœcickiego	22	23
+B6789	Katarzyna	Jankowska	£ódŸ	Piotrkowska	30	12
+B7890	Krzysztof	Wojciechowski	Wroc³aw	O³awska	16b	14
+B8901	Ewa	Kaczmarek	Bydgoszcz	Gdañska	20	6
+B8911	Jakub	WoŸniak	Lublin	Krakowskie Przedmieœcie	7a	19
+B9012	Marek	D¹browski	Toruñ	Rynek Staromiejski	2	22
+C0113	Patrycja	Kwiatkowska	Kielce	Massalskiego	11	2
+C0123	Pawe³	Piotrowski	Wa³brzych	Pi³sudskiego	14	4
+C1122	Zofia	Borowska	Gdynia	Morska	9	23
+C2233	Agnieszka	Lewandowska	Szczecin	Krzywoustego	29	10
+C2345	Krystian	Mazur	Przemyœl	Jagielloñska	16	7
+C3344	Magdalena	Krawczyk	Bia³ystok	Lipowa	12	6
+C3456	Krzysztof	Szymañski	Katowice	Chorzowska	14	8
+C4455	Jolanta	Przybylska	Olsztyn	Prosta	14c	8
+C4567	Tomasz	Zieliñski	Gdynia	Œwiêtojañska	15	9
+C5566	Natalia	Kamiñska	Kielce	Sienkiewicza	10	1
+C5678	Micha³	Nowicki	Kielce	Sienkiewicza	6	4
+C6789	Oskar	Koz³owski	Gdynia	Abrahama	11	22
+C7860	Bartosz	Soko³owski	Szczecin	Monte Cassino	30	9
+C7890	Artur	Witkowski	Legnica	Piastowska	13	6
+C8901	Damian	Ziêba	Bia³ystok	Suraska	13	5
+C9010	Filip	Górski	Olsztyn	Ko³³¹taja	15c	7
+C9012	Maria	Lewandowska	Gdañsk	D³uga	18	7
+C9101	Piotr	Wiœniewski	Gdynia	Œwiêtojañska	22	18
+D1213	Katarzyna	Zieliñska	Poznañ	D³uga	8c	45
+D1234	Joanna	Sadowska	Bia³ystok	Lipowa	3	2
+D2345	Monika	Król	Opole	Nyska	17	5
+D3344	Tomasz	Malinowski	Poznañ	Pó³wiejska	4d	31
+D3456	Piotr	Wiœniewski	Warszawa	Marsza³kowska	22	10
+D3459	Alicja	Zawadzka	Poznañ	Œwiêty Marcin	8	44
+D4455	Sebastian	Mazur	Gdañsk	D³uga	1	27
+D4567	Natalia	Pi¹tkowska	Gdañsk	Wa³y Jagielloñskie	2	26
+D5566	£ukasz	Zieliñski	Rzeszów	3 Maja	18d	29
+D5628	Magdalena	Tomaszewska	Rzeszów	Lisa-Kuli	19d	28
+D5678	Beata	Majewska	Kalisz	Wroc³awska	19	8
+D6677	Rafa³	Grabowski	Czêstochowa	Jagielloñska	6	35
+D6789	Anna	Zaj¹c	P³ock	Sienkiewicza	9	1
+D6790	Emilia	Czarnecka	Czêstochowa	Wilsona	7	34
+D7788	Patryk	Olszewski	Opole	Ozimska	4	30
+D7880	Grzegorz	Mazurek	Opole	Katowicka	5	29
+D7890	Agnieszka	Wójcik	Lublin	Krakowskie Przedmieœcie	7	4
+D8901	Natalia	Nowak	Gorzów Wielkopolski	Wroc³awska	23	6
