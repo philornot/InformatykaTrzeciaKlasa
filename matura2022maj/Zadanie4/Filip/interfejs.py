@@ -1,5 +1,5 @@
 liczby_txt = '../../dane2022maj/liczby.txt'
-przyklad_txt = '../../dane2022maj/przyklad.txt'
+przyklad_txt = '../../dane2022maj/przyklad11.txt'
 
 
 def czytaj_plik(plik=liczby_txt):
