@@ -5,8 +5,8 @@ from interfejs import odczytaj_czasy_przejazdu
 # czyli jeśli na następnym km jest mniejsza v, tworzy się kolumna
 
 def znajdz_kolumny(czy_przyklad=True):
-    czasy = odczytaj_czasy_przejazdu(czy_przyklad)
-    n = len(czasy)
+    pozycje, predkosci = odczytaj_pozycje_i_predkosci(czy_przyklad)
+    n = len(pozycje)
     uzyte = [False] * n
     liczba_kolumn = 0
 
@@ -17,10 +17,8 @@ def znajdz_kolumny(czy_przyklad=True):
 
             for j in range(i + 1, n):
                 if not uzyte[j]:
-                    roznica = czasy[i] - czasy[j]
-                    if roznica < 0:
-                        roznica = -roznica
-                    if roznica < 0.000001:
+                    # Jeśli pozycja/prędkość jest taka sama, to ciężarówki tworzą kolumnę
+                    if pozycje[i] * predkosci[j] == pozycje[j] * predkosci[i]:
                         uzyte[j] = True
 
     return liczba_kolumn
