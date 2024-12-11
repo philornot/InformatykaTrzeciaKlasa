@@ -1,4 +1,4 @@
-from interfejs import odczytaj_czasy_przejazdu
+from interfejs import odczytaj_pozycje_i_predkosci
 
 # w bit18.txt jest "<km autostrady> <prędkość ciężarówek>"
 # jeśli szybszy pojazd napotka wolniejszy, to zwalnia i dostosowuje prędkość do auta wolniejszego
