@@ -1,7 +1,5 @@
-from jaraco.functools import retry
-
-
 def odczytaj_dane(czy_przyklad=False):
+    """Bazowa funkcja odczytująca dane z pliku"""
     if czy_przyklad:
         plik = "przyklad11.txt"
     else:
@@ -16,10 +14,29 @@ def odczytaj_dane(czy_przyklad=False):
         dane_clean.append(dana)
     return dane_clean
 
-def odczytaj_tabele(czy_przyklad=False):
-    dane = odczytaj_dane(czy_przyklad=czy_przyklad)
-    autostrada = {}
-    for linijka in dane:
-        km, predkosc = linijka.split(' ')
-        autostrada[int(km)] = int(predkosc)
-    return autostrada
+
+def odczytaj_pozycje_i_predkosci(czy_przyklad=False):
+    """Funkcja zwracająca dwie tablice: pozycje i prędkości ciężarówek"""
+    dane = odczytaj_dane(czy_przyklad)
+    n = len(dane)
+    pozycje = [0] * n
+    predkosci = [0] * n
+
+    for i in range(n):
+        km, v = dane[i].split()
+        pozycje[i] = int(km)
+        predkosci[i] = int(v)
+
+    return pozycje, predkosci
+
+
+def odczytaj_czasy_przejazdu(czy_przyklad=False):
+    """Funkcja zwracająca tablicę czasów przejazdu dla każdej ciężarówki"""
+    pozycje, predkosci = odczytaj_pozycje_i_predkosci(czy_przyklad)
+    n = len(pozycje)
+    czasy = [0] * n
+
+    for i in range(n):
+        czasy[i] = pozycje[i] / predkosci[i]
+
+    return czasy
