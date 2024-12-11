@@ -1,5 +1,4 @@
 def odczytaj_dane(czy_przyklad=False):
-    """Bazowa funkcja odczytująca dane z pliku"""
     if czy_przyklad:
         plik = "przyklad11.txt"
     else:
@@ -16,7 +15,6 @@ def odczytaj_dane(czy_przyklad=False):
 
 
 def odczytaj_pozycje_i_predkosci(czy_przyklad=False):
-    """Funkcja zwracająca dwie tablice: pozycje i prędkości ciężarówek"""
     dane = odczytaj_dane(czy_przyklad)
     n = len(dane)
     pozycje = [0] * n
@@ -31,7 +29,6 @@ def odczytaj_pozycje_i_predkosci(czy_przyklad=False):
 
 
 def odczytaj_czasy_przejazdu(czy_przyklad=False):
-    """Funkcja zwracająca tablicę czasów przejazdu dla każdej ciężarówki"""
     pozycje, predkosci = odczytaj_pozycje_i_predkosci(czy_przyklad)
     n = len(pozycje)
     czasy = [0] * n

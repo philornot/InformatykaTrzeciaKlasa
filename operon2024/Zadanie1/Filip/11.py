@@ -17,13 +17,12 @@ def znajdz_kolumny(czy_przyklad=True):
 
             for j in range(i + 1, n):
                 if not uzyte[j]:
-                    # Jeśli pozycja/prędkość jest taka sama, to ciężarówki tworzą kolumnę
+                    # jeśli pozycja/prędkość jest taka sama, to ciężarówki tworzą kolumnę
                     if pozycje[i] * predkosci[j] == pozycje[j] * predkosci[i]:
                         uzyte[j] = True
 
     return liczba_kolumn
 
 
-# Wywołanie funkcji
-wynik = znajdz_kolumny(czy_przyklad=False)
+wynik = znajdz_kolumny(czy_przyklad=True)
 print(wynik)
