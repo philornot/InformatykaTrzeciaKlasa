@@ -5,10 +5,8 @@ def przesyl_pakietow(l):
         lzm = [""] * len(l)
         for j in range(len(l)):
             lzm[j] = ltc[l[j]-1]
-            #print(l[l[j]-1], l[j])
         ltc = lzm
         tabwyn.append(ltc)
-        #print(lzm)
     return tabwyn
 
 def lista():
