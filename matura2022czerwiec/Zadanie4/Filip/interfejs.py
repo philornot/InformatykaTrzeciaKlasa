@@ -28,3 +28,14 @@ def czy_podzielna_przez_17(liczba):
         return False
     else:
         return True
+
+
+def czy_pierwsza(liczba):
+    if liczba < 2:
+        return False
+
+    for i in range(2, liczba // 2 + 1):
+        if liczba % i == 0:
+            return False
+
+    return True
