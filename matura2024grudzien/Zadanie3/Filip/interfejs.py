@@ -1,4 +1,4 @@
-def czytaj_plik(czy_przyklad=False):
+def czytaj_plik(czy_przyklad=False, zwroc_int=True):
     if czy_przyklad:
         plik = '../../dane2024grudzien/liczby_przyklad.txt'
     else:
@@ -10,7 +10,10 @@ def czytaj_plik(czy_przyklad=False):
     linie_clean = []
     for linia in linie:
         linia = linia.strip()
-        linie_clean.append(int(linia))
+        if zwroc_int:
+            linie_clean.append(int(linia))
+        else:
+            linie_clean.append(linia)
 
     return linie_clean
 
