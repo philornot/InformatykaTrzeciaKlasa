@@ -1,6 +1,6 @@
 from interfejs import czytaj_plik
 
-liczby = czytaj_plik(czy_przyklad=True, zwroc_int=False)
+liczby = czytaj_plik(czy_przyklad=False, zwroc_int=False)
 
 
 def zwroc_cyfry(liczba):
@@ -30,20 +30,22 @@ def stworz_najmniejsza(liczba):
 
     return int(nowa_min_liczba)
 
-print(liczby[0],stworz_najwieksza(liczby[0]))
-print(liczby[0],stworz_najmniejsza(liczby[0]))
-
 mniejsza_licznik = 0
-wieksza_licznik = 0
 rowne_licznik = 0
+wieksza_licznik = 0
+
 for liczba in liczby:
     najmniejsza = stworz_najmniejsza(liczba)
     najwieksza = stworz_najwieksza(liczba)
-    if najwieksza - najmniejsza > 0:
-        mniejsza_licznik += 1
-    elif najwieksza - najmniejsza == 0:
+    roznica = najwieksza-najmniejsza
+    liczba = int(liczba)
+    if roznica > liczba:
+        wieksza_licznik += 1
+    elif roznica == liczba:
         rowne_licznik += 1
-    elif najwieksza - najmniejsza < 0:
-        mniejsza_licznik += 1
     else:
-        print(f'wtf: {najwieksza - najmniejsza}')
+        mniejsza_licznik += 1
+
+print(f'Mniejsze: {mniejsza_licznik}\n'
+      f'Równe: {rowne_licznik}\n'
+      f'Większe: {wieksza_licznik}')
