@@ -7,3 +7,10 @@ while liczba >  0:
 
 lista_rev = lista[::-1]
 print(lista_rev)
+
+n = len(lista)
+liczba = 0
+for i in range(n):
+    liczba = liczba + lista[i] * 10 ** i
+
+print(liczba)
