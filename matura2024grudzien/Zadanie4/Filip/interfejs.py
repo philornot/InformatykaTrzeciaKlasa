@@ -26,3 +26,12 @@ def odczytaj_wymiary(czy_przyklad=False):
         szerokosc_tabela[i] = int(szerokosc)
 
     return wysokosc_tabela, szerokosc_tabela
+
+# zwraca list z tuplami (wysokosc, szerokosc)
+def odczytaj_prostokaty(czy_przyklad=False):
+    prostokaty = []
+    wysokosc_tabela, szerokosc_tabela = odczytaj_wymiary(czy_przyklad)
+    for i in wysokosc_tabela:
+        nowy_prostokat = wysokosc_tabela[i], szerokosc_tabela[i]
+        prostokaty.append(nowy_prostokat)
+    return prostokaty
