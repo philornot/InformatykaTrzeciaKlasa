@@ -17,3 +17,4 @@ def szyfr(n, s):
     for i in range(len(l-n)):
         tm = ""
         while len(tm) < n:
+            return 0
