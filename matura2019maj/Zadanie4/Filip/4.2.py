@@ -1,0 +1,1 @@
+liczby = czytaj_plik(czy_przyklad=)
