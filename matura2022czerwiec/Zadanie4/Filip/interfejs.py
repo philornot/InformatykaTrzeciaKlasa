@@ -1,8 +1,8 @@
 def czytaj_liczby_z_pliku(czy_przyklad=False):
     if czy_przyklad:
-        plik = "../../DANE/przyklad.txt"
+        plik = "../../dane2022czerwiec/przyklad.txt"
     else:
-        plik = "../../DANE/liczby.txt"
+        plik = "../../dane2022czerwiec/liczby.txt"
 
     with open(plik, "r", encoding="utf-8") as f:
         linie = f.readlines()
