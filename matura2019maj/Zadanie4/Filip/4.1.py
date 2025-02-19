@@ -1,6 +1,6 @@
 from interfejs import czytaj_plik
 
-liczby = czytaj_plik(czy_przyklad=True)
+liczby = czytaj_plik(czy_przyklad=False)
 
 def czy_potega_trojki(liczba):
     potega_trojki = 1
