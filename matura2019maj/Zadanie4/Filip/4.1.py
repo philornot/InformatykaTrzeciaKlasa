@@ -3,13 +3,12 @@ from interfejs import czytaj_plik
 liczby = czytaj_plik(czy_przyklad=True)
 
 def czy_potega_trojki(liczba):
-    if liczba <= 0:
-        return False
-    while liczba > 1:
-        if liczba % 3 != 0:
-            return False
-        liczba = liczba // 3
-    return True
+    potega_trojki = 1
+    while liczba > potega_trojki:
+        potega_trojki *= 3
+        if potega_trojki == liczba:
+            return True
+    return False
 
 def licz_potegi_trojki(lista_liczb):
     znalezione_potegi = []
