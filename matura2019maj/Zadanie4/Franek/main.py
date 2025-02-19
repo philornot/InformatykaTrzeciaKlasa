@@ -28,4 +28,21 @@ def sum_sil(s):
     return wyn
 
 def nwd(a, b):
-    return 0
+    wyn = 0
+    if a > b:
+        for i in range(1,b + 1):
+            if a % i == 0 and b % i ==0:
+                wyn = i
+    else:
+        for i in range(1,a + 1):
+            if a % i == 0 and b % i ==0:
+                wyn = i
+    return wyn
+
+def nwd_listy(l):
+    nwdl = []
+    for i in range(len(l)-1):
+        nwdl.append(nwd(l[i],l[i+1]))
+    return min(nwdl)
+
+print(nwd_listy([2,4,3]))
