@@ -43,6 +43,9 @@ def nwd_listy(l):
     nwdl = []
     for i in range(len(l)-1):
         nwdl.append(nwd(l[i],l[i+1]))
-    return min(nwdl)
+    if len(nwdl) > 0:
+        return min(nwdl)
+    else:
+        return 1
 
-print(nwd_listy([2,4,3]))
+
