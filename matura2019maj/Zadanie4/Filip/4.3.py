@@ -26,17 +26,17 @@ maksymalna_dlugosc = 0
 pierwsza_liczba_ciagu = 0
 maksymalny_nwd = 0
 
-for indeks_i in range(len(liczby)):
-    aktualny_nwd = liczby[indeks_i]
+for i in range(len(liczby)):
+    aktualny_nwd = liczby[i]
 
-    for indeks_j in range(indeks_i + 1, len(liczby)):
-        aktualny_nwd = nwd(aktualny_nwd, liczby[indeks_j])
+    for j in range(i + 1, len(liczby)):
+        aktualny_nwd = nwd(aktualny_nwd, liczby[j])
 
         if aktualny_nwd > 1:
-            aktualna_dlugosc = indeks_j - indeks_i + 1
+            aktualna_dlugosc = j - i + 1
             if aktualna_dlugosc > maksymalna_dlugosc:
                 maksymalna_dlugosc = aktualna_dlugosc
-                pierwsza_liczba_ciagu = indeks_i
+                pierwsza_liczba_ciagu = i
                 maksymalny_nwd = aktualny_nwd
         else:
             break
