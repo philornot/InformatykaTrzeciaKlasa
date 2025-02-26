@@ -16,6 +16,7 @@ def nwd_dla_n_liczb(*argumenty):
     if len(argumenty) == 1:
         return argumenty[0]
     wynik = argumenty[0]
+
     for i in range(1, len(argumenty)):
         wynik = nwd(wynik, argumenty[i])
     return wynik
