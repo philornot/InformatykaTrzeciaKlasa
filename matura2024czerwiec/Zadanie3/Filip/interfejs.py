@@ -11,4 +11,7 @@ def czytaj_plik(czy_przyklad=False):
 
     lista_slow = []
     for slowo in slowa:
-        lista_slow.append(slowo)
+        if slowo != '':
+            lista_slow.append(slowo)
+
+    return lista_slow
