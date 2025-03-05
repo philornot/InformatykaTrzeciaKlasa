@@ -17,9 +17,15 @@ def koduj_slowo_rot13(slowo):
     return zakodowane_slowo
 
 def czytaj_slowo_od_tylu(slowo):
+    odwrocone_slowo = ''
     litery = []
     for litera in slowo:
         litery.append(litera)
-    return litt.reverse()
+
+    litery.reverse()
+    for litera in litery:
+        odwrocone_slowo += litera
+
+    return odwrocone_slowo
 
 print(czytaj_slowo_od_tylu('nera'))
