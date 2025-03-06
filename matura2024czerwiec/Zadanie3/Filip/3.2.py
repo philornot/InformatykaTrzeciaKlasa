@@ -1,6 +1,6 @@
 from interfejs import czytaj_plik
 
-slowa = czytaj_plik(czy_przyklad=True)
+slowa = czytaj_plik(czy_przyklad=False)
 
 def koduj_litere_rot13(litera_alfabetu):
     alfabet = [chr(i) for i in range(97, 123)]  # to zwraca angielski alfabet :)
