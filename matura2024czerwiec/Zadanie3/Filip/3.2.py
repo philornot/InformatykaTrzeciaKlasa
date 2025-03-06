@@ -8,7 +8,7 @@ def koduj_litere_rot13(litera_alfabetu):
         indeks = alfabet.index(litera_alfabetu)
         return alfabet[(indeks + 13) % 26]
     else:
-        return litera_alfabetu  # zwraca znaki niebędące literami bez zmian
+        return litera_alfabetu
 
 def koduj_slowo_rot13(slowo):
     zakodowane_slowo = ''
@@ -28,4 +28,16 @@ def czytaj_slowo_od_tylu(slowo):
 
     return odwrocone_slowo
 
-print(czytaj_slowo_od_tylu('nera'))
+
+licznik = 0
+najdluzsze = 0
+najdluzsze_slowo = ''
+for slowo in slowa:
+    if koduj_slowo_rot13(slowo) == czytaj_slowo_od_tylu(slowo):
+        if len(slowo) > najdluzsze:
+            najdluzsze = len(slowo)
+            najdluzsze_slowo = slowo
+        licznik += 1
+
+print(licznik)
+print(najdluzsze_slowo)
