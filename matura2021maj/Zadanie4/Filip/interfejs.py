@@ -48,3 +48,5 @@ def przesun(obecne_slowo, litera):
         (ord(litera) - ord('a') + 1) % 26 + ord('a'))
 
     return obecne_slowo[:indeks] + nowa_litera + obecne_slowo[indeks + 1:]
+
+# nie chce mi się tego robić dalej, w zasadzie zrobiłem najtrudniejszą część xd
