@@ -1,5 +1,5 @@
 def dane():
-    l = list(open("liczby.txt", "r"))
+    l = list(open("../../dane2016czerwiec/liczby.txt", "r"))
     for i in range(len(l)):
         l[i] = l[i].strip()
 

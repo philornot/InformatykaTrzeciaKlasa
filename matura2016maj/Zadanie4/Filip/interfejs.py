@@ -1,5 +1,5 @@
 def czytaj_tablice_punktow():
-    plik = '../../dane2016czerwiec/punkty.txt'
+    plik = '../../dane2016maj/punkty.txt'
     with open(plik, "r") as f:
         linie = f.readlines()
 
