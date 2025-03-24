@@ -2,17 +2,16 @@ from interfejs import czytaj_plik
 
 punkty = czytaj_plik()
 
+
 def czy_cyfro_podobne(jakas_liczba1, jakas_liczba2):
-    cyfry1 = []
-    for cyfra1 in str(jakas_liczba1):
-        if cyfra1 not in cyfry1:
-            cyfry1.append(cyfra1)
+    str_liczba1 = str(jakas_liczba1)
+    str_liczba2 = str(jakas_liczba2)
 
-    for cyfra2 in str(jakas_liczba2):
-        if cyfra2 not in cyfry1:
-            return False
+    cyfry1 = set(str_liczba1)
+    cyfry2 = set(str_liczba2)
 
-    return True
+    return cyfry1 == cyfry2
+
 
 znalezione = []
 for p in punkty:
@@ -21,3 +20,5 @@ for p in punkty:
         znalezione.append(p)
 
 print(len(znalezione))
+for i, punkt in enumerate(znalezione[:5]):
+    print(punkt)
