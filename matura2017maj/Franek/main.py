@@ -13,4 +13,3 @@ def dane():
                 a = ""
         wyn.append(tm)
     return wyn
-
