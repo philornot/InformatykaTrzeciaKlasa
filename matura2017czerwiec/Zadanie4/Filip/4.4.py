@@ -2,39 +2,50 @@ from interfejs import czytaj_plik
 
 punkty = czytaj_plik()
 
+# kwadrat ma środek w (0,0)
+# czyli ma wierzchołki w (-5000, -5000), (-5000, 5000), (5000, 5000), (5000, -5000)
+
 bok_kwadratu = 10000
-y_min_kwadratu = -bok_kwadratu/2
-x_min_kwadratu = -bok_kwadratu/2
-y_maks_kwadratu = bok_kwadratu/2 # uzyj mnieee
-x_maks_kwadratu = bok_kwadratu/2
+y_min_kwadratu = -bok_kwadratu / 2
+x_min_kwadratu = -bok_kwadratu / 2
+y_maks_kwadratu = bok_kwadratu / 2
+x_maks_kwadratu = bok_kwadratu / 2
 
-
-# jego środek jest w (0,0)
-# czyli ma wierzchołki w (-5000, -5000), (-5000, 5000), (500, 5000), (500, -5000)
+wewnatrz = 0
+na_bokach = 0
+na_zewnatrz = 0
 
 
 def czy_nalezy_do_kwadratu(punkt):
     x, y = punkt
-    if x == x_min_kwadratu:
-        print(f'Warunek 1 spełniony dla {punkt}')
-        if y >= -5000:
-            print(f'Warunek 2 spełniony dla {punkt}')
-            if y <= 5000:
-                print(f'Warunek 3 spełniony dla {punkt}')
-                return True
-    elif y == -5000:
-        print(f'Warunek 1 spełniony dla {punkt}')
-        if x >= -5000:
-            print(f'Warunek 2 spełniony dla {punkt}')
-            if x <= 5000:
-                print(f'Warunek 3 spełniony dla {punkt}')
-                return True
+
+    # sprawdź czy punkt leży na którymś z boków
+    na_lewym_boku = (x == x_min_kwadratu and y_min_kwadratu <= y <= y_maks_kwadratu)
+    na_prawym_boku = (x == x_maks_kwadratu and y_min_kwadratu <= y <= y_maks_kwadratu)
+    na_dolnym_boku = (y == y_min_kwadratu and x_min_kwadratu <= x <= x_maks_kwadratu)
+    na_gornym_boku = (y == y_maks_kwadratu and x_min_kwadratu <= x <= x_maks_kwadratu)
+
+    if na_lewym_boku or na_prawym_boku or na_dolnym_boku or na_gornym_boku:
+        return "na boku"
+
+    # sprawdź, czy punkt leży wewnątrz kwadratu
+    elif x_min_kwadratu < x < x_maks_kwadratu and y_min_kwadratu < y < y_maks_kwadratu:
+        return "wewnątrz"
+
+    # jeśli wszystko wyżej jest False, to punkt musi leżeć na zewnątrz
     else:
-        return False
+        return "na zewnątrz"
+
 
 for punkt in punkty:
-    x, y = punkt
-    if x == 5000:
-        print(punkt)
-    if czy_nalezy_do_kwadratu(punkt):
-        print(punkt)
+    wynik = czy_nalezy_do_kwadratu(punkt)
+    if wynik == "wewnątrz":
+        wewnatrz += 1
+    elif wynik == "na boku":
+        na_bokach += 1
+    else:
+        na_zewnatrz += 1
+
+odpowiedz = f'\n\n========\nZadanie 4.4:\na. {wewnatrz}\nb. {na_bokach}\nc. {na_zewnatrz}'
+with open('wyniki4.txt', 'a') as f:
+    f.write(odpowiedz)
