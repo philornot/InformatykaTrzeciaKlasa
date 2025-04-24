@@ -9,4 +9,3 @@ def dane2():
     for i in range(len(l2)):
         l2[i] = l2[i].strip()
     return l2
-
