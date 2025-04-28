@@ -1,6 +1,6 @@
 from interfejs import czytaj_dane, zapisz_wynik
 
-napisy = czytaj_dane(czy_przyklad=True)
+napisy = czytaj_dane(czy_przyklad=False)
 
 haslo = ''
 pozycja = 1
