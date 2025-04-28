@@ -6,5 +6,9 @@ def czytaj_dane(czy_przyklad=False):
 
     with open(plik, 'r') as f:
         dane = f.readlines()
+    dane_clean = []
+    for dana in dane:
+        dana = dana.strip()
+        dane_clean.append(dana)
 
-    return dane
+    return dane_clean
