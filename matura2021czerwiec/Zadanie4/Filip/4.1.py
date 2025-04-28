@@ -1,4 +1,4 @@
-from interfejs import czytaj_dane
+from interfejs import czytaj_dane, zapisz_wynik
 
 napisy = czytaj_dane(czy_przyklad=False)
 
@@ -9,3 +9,4 @@ for napis in napisy:
             licznik += 1
 
 print(licznik)
+zapisz_wynik(odpowiedz=licznik)
