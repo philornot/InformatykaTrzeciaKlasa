@@ -17,6 +17,8 @@ def przestaw(n):
             w = b
     return w, liczba_wyw
 
-liczba = int(input('Wpisz liczbę: '))
-wynik, liczba_wywolan = przestaw(liczba)
-print(f'Wynik: {wynik}, liczba wywołań: {liczba_wywolan}')
+while True:
+    liczba = int(input('Wpisz liczbę: '))
+    wynik, liczba_wywolan = przestaw(liczba)
+    liczba_wyw = 0
+    print(f'Liczba: {liczba}, k={len(str(liczba))}, wynik: {wynik}, liczba wywołań: {liczba_wywolan}\n')
